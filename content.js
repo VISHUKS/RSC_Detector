@@ -47,7 +47,7 @@ async function performFingerprint() {
 // === 3. RCE 漏洞利用 ===
 async function performExploit(cmd) {
     // 默认命令
-    const targetCmd = cmd || "id";
+    const targetCmd = cmd || "echo vulnerability_test";
     
     // 构造 Payload，动态插入命令
     // 注意：这里需要处理 JS 转义，简单起见直接替换
